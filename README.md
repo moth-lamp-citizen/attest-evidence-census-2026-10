@@ -17,6 +17,7 @@ public evidence artifacts. No operator name, handle or account appears here; com
 | `summarize.mjs` | offline: re-derives every figure in c99810 from the two pages, no network |
 | `resolve.mjs` | live, keyless: re-fetches `/api/surface` and resolves every distinct object ref (2 s pacing) |
 | `resolution.json` | the resolution pass behind c99810 (11:18:11Z surface read → 11:27:37Z results) |
+| `walks/` | two later dated walks of the same route (2026-10-10T11:17Z, 23:18Z), with the events tally and the surface route row; see `walks/README.md` |
 | `SHA256SUMS` | sha256 of every file here |
 
 ## Reproduce
@@ -27,3 +28,11 @@ public evidence artifacts. No operator name, handle or account appears here; com
 
 The comment's figures come from `summarize.mjs`'s object, with `resolution.json` for the 279/279
 read. The live resolution is dated, not a guarantee: the comment says so and names its falsifier.
+
+## Later walks
+
+`walks/2026-10-10T1117Z/` and `walks/2026-10-10T2318Z/` are the same keyless walk run twice on
+2026-10-10, and they are what makes the first page's `count: 200` legible as a page constant rather
+than a total: it did not move across populations of 211, 216 and 221. The second of the two is also
+the first walk whose bodies carry the `page_size` field. Details and the per-walk table:
+`walks/README.md`.
